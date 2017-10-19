@@ -1,0 +1,268 @@
+[2017-10-19 11:34:05] lumen.ERROR: ErrorException: Undefined variable: app in /home/esilv/Desktop/machine-learning/routes/bla.php:3
+Stack trace:
+#0 /home/esilv/Desktop/machine-learning/routes/bla.php(3): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(8, 'Undefined varia...', '/home/esilv/Des...', 3, Array)
+#1 /home/esilv/Desktop/machine-learning/bootstrap/app.php(31): require('/home/esilv/Des...')
+#2 [internal function]: {closure}(Object(Laravel\Lumen\Routing\Router))
+#3 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Routing/Router.php(62): call_user_func(Object(Closure), Object(Laravel\Lumen\Routing\Router))
+#4 /home/esilv/Desktop/machine-learning/bootstrap/app.php(34): Laravel\Lumen\Routing\Router->group(Array, Object(Closure))
+#5 /home/esilv/Desktop/machine-learning/public/index.php(3): require('/home/esilv/Des...')
+#6 {main}  
+[2017-10-19 11:35:31] lumen.ERROR: Symfony\Component\Debug\Exception\FatalThrowableError: Type error: Too few arguments to function Closure::{closure}(), 0 passed and exactly 1 expected in /home/esilv/Desktop/machine-learning/routes/bla.php:3
+Stack trace:
+#0 [internal function]: Closure->{closure}()
+#1 /home/esilv/Desktop/machine-learning/vendor/illuminate/container/BoundMethod.php(29): call_user_func_array(Object(Closure), Array)
+#2 /home/esilv/Desktop/machine-learning/vendor/illuminate/container/BoundMethod.php(75): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#3 /home/esilv/Desktop/machine-learning/vendor/illuminate/container/BoundMethod.php(31): Illuminate\Container\BoundMethod::callBoundMethod(Object(Laravel\Lumen\Application), Object(Closure), Object(Closure))
+#4 /home/esilv/Desktop/machine-learning/vendor/illuminate/container/Container.php(549): Illuminate\Container\BoundMethod::call(Object(Laravel\Lumen\Application), Object(Closure), Array, NULL)
+#5 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(286): Illuminate\Container\Container->call(Object(Closure), Array)
+#6 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(260): Laravel\Lumen\Application->callActionOnArrayBasedRoute(Array)
+#7 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(160): Laravel\Lumen\Application->handleFoundRoute(Array)
+#8 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(413): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#9 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(166): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#10 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(107): Laravel\Lumen\Application->dispatch(NULL)
+#11 /home/esilv/Desktop/machine-learning/public/index.php(4): Laravel\Lumen\Application->run()
+#12 {main}  
+[2017-10-19 11:38:16] lumen.ERROR: ErrorException: Undefined variable: router in /home/esilv/Desktop/machine-learning/routes/api.php:5
+Stack trace:
+#0 /home/esilv/Desktop/machine-learning/routes/api.php(5): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(8, 'Undefined varia...', '/home/esilv/Des...', 5, Array)
+#1 [internal function]: {closure}(Object(Laravel\Lumen\Routing\Router))
+#2 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Routing/Router.php(62): call_user_func(Object(Closure), Object(Laravel\Lumen\Routing\Router))
+#3 /home/esilv/Desktop/machine-learning/routes/api.php(9): Laravel\Lumen\Routing\Router->group(Array, Object(Closure))
+#4 /home/esilv/Desktop/machine-learning/bootstrap/app.php(31): require('/home/esilv/Des...')
+#5 [internal function]: {closure}(Object(Laravel\Lumen\Routing\Router))
+#6 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Routing/Router.php(62): call_user_func(Object(Closure), Object(Laravel\Lumen\Routing\Router))
+#7 /home/esilv/Desktop/machine-learning/bootstrap/app.php(34): Laravel\Lumen\Routing\Router->group(Array, Object(Closure))
+#8 /home/esilv/Desktop/machine-learning/public/index.php(3): require('/home/esilv/Des...')
+#9 {main}  
+[2017-10-19 11:38:20] lumen.ERROR: ErrorException: Undefined variable: router in /home/esilv/Desktop/machine-learning/routes/api.php:5
+Stack trace:
+#0 /home/esilv/Desktop/machine-learning/routes/api.php(5): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(8, 'Undefined varia...', '/home/esilv/Des...', 5, Array)
+#1 [internal function]: {closure}(Object(Laravel\Lumen\Routing\Router))
+#2 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Routing/Router.php(62): call_user_func(Object(Closure), Object(Laravel\Lumen\Routing\Router))
+#3 /home/esilv/Desktop/machine-learning/routes/api.php(9): Laravel\Lumen\Routing\Router->group(Array, Object(Closure))
+#4 /home/esilv/Desktop/machine-learning/bootstrap/app.php(31): require('/home/esilv/Des...')
+#5 [internal function]: {closure}(Object(Laravel\Lumen\Routing\Router))
+#6 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Routing/Router.php(62): call_user_func(Object(Closure), Object(Laravel\Lumen\Routing\Router))
+#7 /home/esilv/Desktop/machine-learning/bootstrap/app.php(34): Laravel\Lumen\Routing\Router->group(Array, Object(Closure))
+#8 /home/esilv/Desktop/machine-learning/public/index.php(3): require('/home/esilv/Des...')
+#9 {main}  
+[2017-10-19 11:38:23] lumen.ERROR: ErrorException: Undefined variable: router in /home/esilv/Desktop/machine-learning/routes/api.php:5
+Stack trace:
+#0 /home/esilv/Desktop/machine-learning/routes/api.php(5): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(8, 'Undefined varia...', '/home/esilv/Des...', 5, Array)
+#1 [internal function]: {closure}(Object(Laravel\Lumen\Routing\Router))
+#2 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Routing/Router.php(62): call_user_func(Object(Closure), Object(Laravel\Lumen\Routing\Router))
+#3 /home/esilv/Desktop/machine-learning/routes/api.php(9): Laravel\Lumen\Routing\Router->group(Array, Object(Closure))
+#4 /home/esilv/Desktop/machine-learning/bootstrap/app.php(31): require('/home/esilv/Des...')
+#5 [internal function]: {closure}(Object(Laravel\Lumen\Routing\Router))
+#6 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Routing/Router.php(62): call_user_func(Object(Closure), Object(Laravel\Lumen\Routing\Router))
+#7 /home/esilv/Desktop/machine-learning/bootstrap/app.php(34): Laravel\Lumen\Routing\Router->group(Array, Object(Closure))
+#8 /home/esilv/Desktop/machine-learning/public/index.php(3): require('/home/esilv/Des...')
+#9 {main}  
+[2017-10-19 11:43:10] lumen.ERROR: ErrorException: Undefined variable: file1 in /home/esilv/Desktop/machine-learning/bootstrap/app.php:35
+Stack trace:
+#0 /home/esilv/Desktop/machine-learning/bootstrap/app.php(35): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(8, 'Undefined varia...', '/home/esilv/Des...', 35, Array)
+#1 [internal function]: {closure}(Object(Laravel\Lumen\Routing\Router))
+#2 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Routing/Router.php(62): call_user_func(Object(Closure), Object(Laravel\Lumen\Routing\Router))
+#3 /home/esilv/Desktop/machine-learning/bootstrap/app.php(38): Laravel\Lumen\Routing\Router->group(Array, Object(Closure))
+#4 /home/esilv/Desktop/machine-learning/public/index.php(3): require('/home/esilv/Des...')
+#5 {main}  
+[2017-10-19 11:45:36] lumen.ERROR: ErrorException: Undefined variable: file1 in /home/esilv/Desktop/machine-learning/bootstrap/app.php:35
+Stack trace:
+#0 /home/esilv/Desktop/machine-learning/bootstrap/app.php(35): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(8, 'Undefined varia...', '/home/esilv/Des...', 35, Array)
+#1 [internal function]: {closure}(Object(Laravel\Lumen\Routing\Router))
+#2 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Routing/Router.php(62): call_user_func(Object(Closure), Object(Laravel\Lumen\Routing\Router))
+#3 /home/esilv/Desktop/machine-learning/bootstrap/app.php(38): Laravel\Lumen\Routing\Router->group(Array, Object(Closure))
+#4 /home/esilv/Desktop/machine-learning/public/index.php(3): require('/home/esilv/Des...')
+#5 {main}  
+[2017-10-19 11:45:37] lumen.ERROR: ErrorException: Undefined variable: file1 in /home/esilv/Desktop/machine-learning/bootstrap/app.php:35
+Stack trace:
+#0 /home/esilv/Desktop/machine-learning/bootstrap/app.php(35): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(8, 'Undefined varia...', '/home/esilv/Des...', 35, Array)
+#1 [internal function]: {closure}(Object(Laravel\Lumen\Routing\Router))
+#2 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Routing/Router.php(62): call_user_func(Object(Closure), Object(Laravel\Lumen\Routing\Router))
+#3 /home/esilv/Desktop/machine-learning/bootstrap/app.php(38): Laravel\Lumen\Routing\Router->group(Array, Object(Closure))
+#4 /home/esilv/Desktop/machine-learning/public/index.php(3): require('/home/esilv/Des...')
+#5 {main}  
+[2017-10-19 11:46:01] lumen.ERROR: ErrorException: Undefined variable: file1 in /home/esilv/Desktop/machine-learning/bootstrap/app.php:35
+Stack trace:
+#0 /home/esilv/Desktop/machine-learning/bootstrap/app.php(35): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(8, 'Undefined varia...', '/home/esilv/Des...', 35, Array)
+#1 [internal function]: {closure}(Object(Laravel\Lumen\Routing\Router))
+#2 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Routing/Router.php(62): call_user_func(Object(Closure), Object(Laravel\Lumen\Routing\Router))
+#3 /home/esilv/Desktop/machine-learning/bootstrap/app.php(38): Laravel\Lumen\Routing\Router->group(Array, Object(Closure))
+#4 /home/esilv/Desktop/machine-learning/public/index.php(3): require('/home/esilv/Des...')
+#5 {main}  
+[2017-10-19 11:46:23] lumen.ERROR: ErrorException: Undefined variable: file1 in /home/esilv/Desktop/machine-learning/bootstrap/app.php:35
+Stack trace:
+#0 /home/esilv/Desktop/machine-learning/bootstrap/app.php(35): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(8, 'Undefined varia...', '/home/esilv/Des...', 35, Array)
+#1 [internal function]: {closure}(Object(Laravel\Lumen\Routing\Router))
+#2 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Routing/Router.php(62): call_user_func(Object(Closure), Object(Laravel\Lumen\Routing\Router))
+#3 /home/esilv/Desktop/machine-learning/bootstrap/app.php(38): Laravel\Lumen\Routing\Router->group(Array, Object(Closure))
+#4 /home/esilv/Desktop/machine-learning/public/index.php(3): require('/home/esilv/Des...')
+#5 {main}  
+[2017-10-19 11:46:35] lumen.ERROR: ErrorException: Undefined variable: file1 in /home/esilv/Desktop/machine-learning/bootstrap/app.php:35
+Stack trace:
+#0 /home/esilv/Desktop/machine-learning/bootstrap/app.php(35): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(8, 'Undefined varia...', '/home/esilv/Des...', 35, Array)
+#1 [internal function]: {closure}(Object(Laravel\Lumen\Routing\Router))
+#2 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Routing/Router.php(62): call_user_func(Object(Closure), Object(Laravel\Lumen\Routing\Router))
+#3 /home/esilv/Desktop/machine-learning/bootstrap/app.php(38): Laravel\Lumen\Routing\Router->group(Array, Object(Closure))
+#4 /home/esilv/Desktop/machine-learning/public/index.php(3): require('/home/esilv/Des...')
+#5 {main}  
+[2017-10-19 11:46:56] lumen.ERROR: ErrorException: Undefined variable: file1 in /home/esilv/Desktop/machine-learning/bootstrap/app.php:35
+Stack trace:
+#0 /home/esilv/Desktop/machine-learning/bootstrap/app.php(35): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(8, 'Undefined varia...', '/home/esilv/Des...', 35, Array)
+#1 [internal function]: {closure}(Object(Laravel\Lumen\Routing\Router))
+#2 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Routing/Router.php(62): call_user_func(Object(Closure), Object(Laravel\Lumen\Routing\Router))
+#3 /home/esilv/Desktop/machine-learning/bootstrap/app.php(38): Laravel\Lumen\Routing\Router->group(Array, Object(Closure))
+#4 /home/esilv/Desktop/machine-learning/public/index.php(3): require('/home/esilv/Des...')
+#5 {main}  
+[2017-10-19 11:48:31] lumen.ERROR: ErrorException: Undefined variable: file1 in /home/esilv/Desktop/machine-learning/bootstrap/app.php:35
+Stack trace:
+#0 /home/esilv/Desktop/machine-learning/bootstrap/app.php(35): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(8, 'Undefined varia...', '/home/esilv/Des...', 35, Array)
+#1 [internal function]: {closure}(Object(Laravel\Lumen\Routing\Router))
+#2 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Routing/Router.php(62): call_user_func(Object(Closure), Object(Laravel\Lumen\Routing\Router))
+#3 /home/esilv/Desktop/machine-learning/bootstrap/app.php(38): Laravel\Lumen\Routing\Router->group(Array, Object(Closure))
+#4 /home/esilv/Desktop/machine-learning/public/index.php(3): require('/home/esilv/Des...')
+#5 {main}  
+[2017-10-19 11:48:47] lumen.ERROR: ErrorException: Undefined variable: file1 in /home/esilv/Desktop/machine-learning/bootstrap/app.php:35
+Stack trace:
+#0 /home/esilv/Desktop/machine-learning/bootstrap/app.php(35): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(8, 'Undefined varia...', '/home/esilv/Des...', 35, Array)
+#1 [internal function]: {closure}(Object(Laravel\Lumen\Routing\Router))
+#2 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Routing/Router.php(62): call_user_func(Object(Closure), Object(Laravel\Lumen\Routing\Router))
+#3 /home/esilv/Desktop/machine-learning/bootstrap/app.php(38): Laravel\Lumen\Routing\Router->group(Array, Object(Closure))
+#4 /home/esilv/Desktop/machine-learning/public/index.php(3): require('/home/esilv/Des...')
+#5 {main}  
+[2017-10-19 11:48:57] lumen.ERROR: ErrorException: Undefined variable: file1 in /home/esilv/Desktop/machine-learning/bootstrap/app.php:35
+Stack trace:
+#0 /home/esilv/Desktop/machine-learning/bootstrap/app.php(35): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(8, 'Undefined varia...', '/home/esilv/Des...', 35, Array)
+#1 [internal function]: {closure}(Object(Laravel\Lumen\Routing\Router))
+#2 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Routing/Router.php(62): call_user_func(Object(Closure), Object(Laravel\Lumen\Routing\Router))
+#3 /home/esilv/Desktop/machine-learning/bootstrap/app.php(38): Laravel\Lumen\Routing\Router->group(Array, Object(Closure))
+#4 /home/esilv/Desktop/machine-learning/public/index.php(3): require('/home/esilv/Des...')
+#5 {main}  
+[2017-10-19 11:54:55] lumen.ERROR: Exception: test in /home/esilv/Desktop/machine-learning/routes/api.php:6
+Stack trace:
+#0 [internal function]: Closure->{closure}()
+#1 /home/esilv/Desktop/machine-learning/vendor/illuminate/container/BoundMethod.php(29): call_user_func_array(Object(Closure), Array)
+#2 /home/esilv/Desktop/machine-learning/vendor/illuminate/container/BoundMethod.php(75): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#3 /home/esilv/Desktop/machine-learning/vendor/illuminate/container/BoundMethod.php(31): Illuminate\Container\BoundMethod::callBoundMethod(Object(Laravel\Lumen\Application), Object(Closure), Object(Closure))
+#4 /home/esilv/Desktop/machine-learning/vendor/illuminate/container/Container.php(549): Illuminate\Container\BoundMethod::call(Object(Laravel\Lumen\Application), Object(Closure), Array, NULL)
+#5 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(286): Illuminate\Container\Container->call(Object(Closure), Array)
+#6 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(260): Laravel\Lumen\Application->callActionOnArrayBasedRoute(Array)
+#7 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(160): Laravel\Lumen\Application->handleFoundRoute(Array)
+#8 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(413): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#9 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(166): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#10 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(107): Laravel\Lumen\Application->dispatch(NULL)
+#11 /home/esilv/Desktop/machine-learning/public/index.php(4): Laravel\Lumen\Application->run()
+#12 {main}  
+[2017-10-19 13:04:37] lumen.ERROR: Exception: test in /home/esilv/Desktop/machine-learning/routes/api.php:6
+Stack trace:
+#0 [internal function]: Closure->{closure}()
+#1 /home/esilv/Desktop/machine-learning/vendor/illuminate/container/BoundMethod.php(29): call_user_func_array(Object(Closure), Array)
+#2 /home/esilv/Desktop/machine-learning/vendor/illuminate/container/BoundMethod.php(75): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#3 /home/esilv/Desktop/machine-learning/vendor/illuminate/container/BoundMethod.php(31): Illuminate\Container\BoundMethod::callBoundMethod(Object(Laravel\Lumen\Application), Object(Closure), Object(Closure))
+#4 /home/esilv/Desktop/machine-learning/vendor/illuminate/container/Container.php(549): Illuminate\Container\BoundMethod::call(Object(Laravel\Lumen\Application), Object(Closure), Array, NULL)
+#5 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(286): Illuminate\Container\Container->call(Object(Closure), Array)
+#6 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(260): Laravel\Lumen\Application->callActionOnArrayBasedRoute(Array)
+#7 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(160): Laravel\Lumen\Application->handleFoundRoute(Array)
+#8 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(413): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#9 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(166): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#10 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(107): Laravel\Lumen\Application->dispatch(NULL)
+#11 /home/esilv/Desktop/machine-learning/public/index.php(4): Laravel\Lumen\Application->run()
+#12 {main}  
+[2017-10-19 13:05:18] lumen.ERROR: Symfony\Component\Debug\Exception\FatalThrowableError: Class 'Gateway' not found in /home/esilv/Desktop/machine-learning/routes/api.php:7
+Stack trace:
+#0 [internal function]: Closure->{closure}()
+#1 /home/esilv/Desktop/machine-learning/vendor/illuminate/container/BoundMethod.php(29): call_user_func_array(Object(Closure), Array)
+#2 /home/esilv/Desktop/machine-learning/vendor/illuminate/container/BoundMethod.php(75): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#3 /home/esilv/Desktop/machine-learning/vendor/illuminate/container/BoundMethod.php(31): Illuminate\Container\BoundMethod::callBoundMethod(Object(Laravel\Lumen\Application), Object(Closure), Object(Closure))
+#4 /home/esilv/Desktop/machine-learning/vendor/illuminate/container/Container.php(549): Illuminate\Container\BoundMethod::call(Object(Laravel\Lumen\Application), Object(Closure), Array, NULL)
+#5 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(286): Illuminate\Container\Container->call(Object(Closure), Array)
+#6 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(260): Laravel\Lumen\Application->callActionOnArrayBasedRoute(Array)
+#7 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(160): Laravel\Lumen\Application->handleFoundRoute(Array)
+#8 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(413): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#9 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(166): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#10 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(107): Laravel\Lumen\Application->dispatch(NULL)
+#11 /home/esilv/Desktop/machine-learning/public/index.php(4): Laravel\Lumen\Application->run()
+#12 {main}  
+[2017-10-19 13:05:31] lumen.ERROR: Symfony\Component\Debug\Exception\FatalThrowableError: Class 'Core\Gateways\Gateway' not found in /home/esilv/Desktop/machine-learning/routes/api.php:7
+Stack trace:
+#0 [internal function]: Closure->{closure}()
+#1 /home/esilv/Desktop/machine-learning/vendor/illuminate/container/BoundMethod.php(29): call_user_func_array(Object(Closure), Array)
+#2 /home/esilv/Desktop/machine-learning/vendor/illuminate/container/BoundMethod.php(75): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#3 /home/esilv/Desktop/machine-learning/vendor/illuminate/container/BoundMethod.php(31): Illuminate\Container\BoundMethod::callBoundMethod(Object(Laravel\Lumen\Application), Object(Closure), Object(Closure))
+#4 /home/esilv/Desktop/machine-learning/vendor/illuminate/container/Container.php(549): Illuminate\Container\BoundMethod::call(Object(Laravel\Lumen\Application), Object(Closure), Array, NULL)
+#5 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(286): Illuminate\Container\Container->call(Object(Closure), Array)
+#6 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(260): Laravel\Lumen\Application->callActionOnArrayBasedRoute(Array)
+#7 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(160): Laravel\Lumen\Application->handleFoundRoute(Array)
+#8 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(413): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#9 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(166): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#10 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(107): Laravel\Lumen\Application->dispatch(NULL)
+#11 /home/esilv/Desktop/machine-learning/public/index.php(4): Laravel\Lumen\Application->run()
+#12 {main}  
+[2017-10-19 13:05:44] lumen.ERROR: ErrorException: Use of undefined constant GATEWAY - assumed 'GATEWAY' in /home/esilv/Desktop/machine-learning/core/Gateways/Gateway.php:14
+Stack trace:
+#0 /home/esilv/Desktop/machine-learning/core/Gateways/Gateway.php(14): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(8, 'Use of undefine...', '/home/esilv/Des...', 14, Array)
+#1 /home/esilv/Desktop/machine-learning/routes/api.php(8): Core\Gateways\Gateway->getServiceManager()
+#2 [internal function]: Closure->{closure}()
+#3 /home/esilv/Desktop/machine-learning/vendor/illuminate/container/BoundMethod.php(29): call_user_func_array(Object(Closure), Array)
+#4 /home/esilv/Desktop/machine-learning/vendor/illuminate/container/BoundMethod.php(75): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#5 /home/esilv/Desktop/machine-learning/vendor/illuminate/container/BoundMethod.php(31): Illuminate\Container\BoundMethod::callBoundMethod(Object(Laravel\Lumen\Application), Object(Closure), Object(Closure))
+#6 /home/esilv/Desktop/machine-learning/vendor/illuminate/container/Container.php(549): Illuminate\Container\BoundMethod::call(Object(Laravel\Lumen\Application), Object(Closure), Array, NULL)
+#7 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(286): Illuminate\Container\Container->call(Object(Closure), Array)
+#8 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(260): Laravel\Lumen\Application->callActionOnArrayBasedRoute(Array)
+#9 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(160): Laravel\Lumen\Application->handleFoundRoute(Array)
+#10 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(413): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#11 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(166): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#12 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(107): Laravel\Lumen\Application->dispatch(NULL)
+#13 /home/esilv/Desktop/machine-learning/public/index.php(4): Laravel\Lumen\Application->run()
+#14 {main}  
+[2017-10-19 13:10:23] lumen.ERROR: ErrorException: Undefined index: illuminateeeeee in /home/esilv/Desktop/machine-learning/core/Gateways/Gateway.php:16
+Stack trace:
+#0 /home/esilv/Desktop/machine-learning/core/Gateways/Gateway.php(16): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(8, 'Undefined index...', '/home/esilv/Des...', 16, Array)
+#1 /home/esilv/Desktop/machine-learning/routes/api.php(8): Core\Gateways\Gateway->getServiceManager()
+#2 [internal function]: Closure->{closure}()
+#3 /home/esilv/Desktop/machine-learning/vendor/illuminate/container/BoundMethod.php(29): call_user_func_array(Object(Closure), Array)
+#4 /home/esilv/Desktop/machine-learning/vendor/illuminate/container/BoundMethod.php(75): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#5 /home/esilv/Desktop/machine-learning/vendor/illuminate/container/BoundMethod.php(31): Illuminate\Container\BoundMethod::callBoundMethod(Object(Laravel\Lumen\Application), Object(Closure), Object(Closure))
+#6 /home/esilv/Desktop/machine-learning/vendor/illuminate/container/Container.php(549): Illuminate\Container\BoundMethod::call(Object(Laravel\Lumen\Application), Object(Closure), Array, NULL)
+#7 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(286): Illuminate\Container\Container->call(Object(Closure), Array)
+#8 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(260): Laravel\Lumen\Application->callActionOnArrayBasedRoute(Array)
+#9 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(160): Laravel\Lumen\Application->handleFoundRoute(Array)
+#10 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(413): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#11 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(166): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#12 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(107): Laravel\Lumen\Application->dispatch(NULL)
+#13 /home/esilv/Desktop/machine-learning/public/index.php(4): Laravel\Lumen\Application->run()
+#14 {main}  
+[2017-10-19 13:12:13] lumen.ERROR: ErrorException: Undefined index: illuminateeeeee in /home/esilv/Desktop/machine-learning/core/Gateways/Gateway.php:16
+Stack trace:
+#0 /home/esilv/Desktop/machine-learning/core/Gateways/Gateway.php(16): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(8, 'Undefined index...', '/home/esilv/Des...', 16, Array)
+#1 /home/esilv/Desktop/machine-learning/routes/api.php(8): Core\Gateways\Gateway->getServiceManager()
+#2 [internal function]: Closure->{closure}()
+#3 /home/esilv/Desktop/machine-learning/vendor/illuminate/container/BoundMethod.php(29): call_user_func_array(Object(Closure), Array)
+#4 /home/esilv/Desktop/machine-learning/vendor/illuminate/container/BoundMethod.php(75): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#5 /home/esilv/Desktop/machine-learning/vendor/illuminate/container/BoundMethod.php(31): Illuminate\Container\BoundMethod::callBoundMethod(Object(Laravel\Lumen\Application), Object(Closure), Object(Closure))
+#6 /home/esilv/Desktop/machine-learning/vendor/illuminate/container/Container.php(549): Illuminate\Container\BoundMethod::call(Object(Laravel\Lumen\Application), Object(Closure), Array, NULL)
+#7 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(286): Illuminate\Container\Container->call(Object(Closure), Array)
+#8 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(260): Laravel\Lumen\Application->callActionOnArrayBasedRoute(Array)
+#9 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(160): Laravel\Lumen\Application->handleFoundRoute(Array)
+#10 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(413): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#11 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(166): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#12 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(107): Laravel\Lumen\Application->dispatch(NULL)
+#13 /home/esilv/Desktop/machine-learning/public/index.php(4): Laravel\Lumen\Application->run()
+#14 {main}  
+[2017-10-19 13:12:27] lumen.ERROR: ErrorException: Undefined offset: 0 in /home/esilv/Desktop/machine-learning/core/Gateways/Gateway.php:16
+Stack trace:
+#0 /home/esilv/Desktop/machine-learning/core/Gateways/Gateway.php(16): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(8, 'Undefined offse...', '/home/esilv/Des...', 16, Array)
+#1 /home/esilv/Desktop/machine-learning/routes/api.php(8): Core\Gateways\Gateway->getServiceManager()
+#2 [internal function]: Closure->{closure}()
+#3 /home/esilv/Desktop/machine-learning/vendor/illuminate/container/BoundMethod.php(29): call_user_func_array(Object(Closure), Array)
+#4 /home/esilv/Desktop/machine-learning/vendor/illuminate/container/BoundMethod.php(75): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#5 /home/esilv/Desktop/machine-learning/vendor/illuminate/container/BoundMethod.php(31): Illuminate\Container\BoundMethod::callBoundMethod(Object(Laravel\Lumen\Application), Object(Closure), Object(Closure))
+#6 /home/esilv/Desktop/machine-learning/vendor/illuminate/container/Container.php(549): Illuminate\Container\BoundMethod::call(Object(Laravel\Lumen\Application), Object(Closure), Array, NULL)
+#7 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(286): Illuminate\Container\Container->call(Object(Closure), Array)
+#8 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(260): Laravel\Lumen\Application->callActionOnArrayBasedRoute(Array)
+#9 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(160): Laravel\Lumen\Application->handleFoundRoute(Array)
+#10 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(413): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#11 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(166): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#12 /home/esilv/Desktop/machine-learning/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(107): Laravel\Lumen\Application->dispatch(NULL)
+#13 /home/esilv/Desktop/machine-learning/public/index.php(4): Laravel\Lumen\Application->run()
+#14 {main}  
