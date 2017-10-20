@@ -4,7 +4,6 @@ namespace Core\Gateways;
 
 final class Gateway
 {
-
     protected $adapters = [
         'service_manager' => [
             'illuminate' => \Core\Gateways\Adapters\ServiceManagers\IlluminateAdapter::class
