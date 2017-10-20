@@ -12,7 +12,7 @@ final class Gateway
 
     public function getServiceManager()
     {
-        if ($adapter = $this->adapters['service_manager'][getenv('GATEWAY')]) {
+        if ($adapter = $this->adapters['service_manager'][getenv('GATEWAY_SERVICE_MANAGER')]) {
             return new $adapter;
         }
         throw new AdapterNotFoundException();

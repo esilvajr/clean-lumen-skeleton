@@ -9,10 +9,6 @@ try {
     //
 }
 
-$whoops = new \Whoops\Run;
-$whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
-$whoops->register();
-
 $app = new Laravel\Lumen\Application(
     realpath(__DIR__.'/../')
 );
@@ -20,6 +16,12 @@ $app = new Laravel\Lumen\Application(
 $app->singleton(
     Illuminate\Contracts\Debug\ExceptionHandler::class,
     App\Exceptions\Handler::class
+);
+
+
+$app->singleton(
+    Illuminate\Contracts\Console\Kernel::class,
+    App\Console\Kernel::class
 );
 
 $kernel = new \App\Kernel();
