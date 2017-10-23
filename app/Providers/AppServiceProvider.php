@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use Core\Gateways\HelloWorld;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -13,8 +14,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        app()->bind('GatewayHelloWorld', function(){
-            die("Hello World");
+        $this->app->singleton(HelloWorld::class, function(){
+            return (new \Core\Entities\HelloWorld())->sayHelloWorld();
         });
     }
 }
