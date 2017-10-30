@@ -2,10 +2,10 @@
 
 namespace Module2\Entities;
 
-class HelloWorld implements \Core\Gateways\HelloWorld
+class HelloWorld implements \Module2\Gateways\HelloWorld
 {
     public function sayHelloWorld(): string
     {
-        return "Hello World!";
+        return "Hello World! Version 2";
     }
 }

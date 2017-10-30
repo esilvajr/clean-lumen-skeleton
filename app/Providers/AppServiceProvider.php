@@ -15,11 +15,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton(HWV1::class, function(){
+        $this->app->bind(HWV1::class, function(){
             return (new \Module1\Entities\HelloWorld())->sayHelloWorld();
         });
-
-        $this->app->singleton(HWVV2::class, function(){
+        
+        $this->app->bind(HWV2::class, function(){
             return (new \Module2\Entities\HelloWorld())->sayHelloWorld();
         });
     }

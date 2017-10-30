@@ -6,6 +6,6 @@ class HelloWorld implements \Module1\Gateways\HelloWorld
 {
     public function sayHelloWorld(): string
     {
-        return "Hello World!";
+        return "Hello World! Version 1";
     }
 }
