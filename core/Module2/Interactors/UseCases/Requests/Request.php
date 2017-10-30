@@ -1,6 +1,6 @@
 <?php
 
-namespace Core\Interactors\UseCase\Requests;
+namespace Module2\Interactors\UseCase\Requests;
 
 interface Request
 {

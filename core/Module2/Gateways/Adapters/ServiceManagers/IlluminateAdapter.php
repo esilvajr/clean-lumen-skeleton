@@ -1,9 +1,9 @@
 <?php
 
-namespace Core\Gateways\Adapters\ServiceManagers;
+namespace Module2\Gateways\Adapters\ServiceManagers;
 
 use Illuminate\Container\Container;
-use Core\Gateways\ServiceManager;
+use Module2\Gateways\ServiceManager;
 
 class IlluminateAdapter implements ServiceManager
 {

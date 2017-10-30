@@ -1,8 +1,8 @@
 <?php
 
-namespace Core\Presenters;
+namespace Module1\Presenters;
 
-use Core\Interactors\UseCases\UseCase;
+use Module1\Interactors\UseCases\UseCase;
 
 interface Presenter
 {

@@ -6,8 +6,8 @@ $router->get('/', function() use ($router){
 
 $router->group(['prefix' => 'v1/'], function() use ($router) {
     $router->get('/', function() use ($router){
-        $gateway = new \Core\Gateways\Gateway();
-        return $gateway->getServiceManager()->make(\Core\Gateways\HelloWorld::class);
+        $gateway = new \Module1\Gateways\Gateway();
+        return $gateway->getServiceManager()->make(\Module1\Gateways\HelloWorld::class);
     });
 });
 

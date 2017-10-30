@@ -1,12 +1,12 @@
 <?php
 
-namespace Core\Gateways;
+namespace Module1\Gateways;
 
 final class Gateway
 {
     protected $adapters = [
         'service_manager' => [
-            'illuminate' => \Core\Gateways\Adapters\ServiceManagers\IlluminateAdapter::class
+            'illuminate' => \Module1\Gateways\Adapters\ServiceManagers\IlluminateAdapter::class
         ]
     ];
 

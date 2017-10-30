@@ -1,6 +1,6 @@
 <?php
 
-namespace Core\Gateways;
+namespace Module2\Gateways;
 
 interface HelloWorld
 {

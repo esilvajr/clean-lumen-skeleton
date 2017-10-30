@@ -1,6 +1,6 @@
 <?php
 
-namespace Core\Entities;
+namespace Module2\Entities;
 
 class HelloWorld implements \Core\Gateways\HelloWorld
 {
@@ -8,5 +8,4 @@ class HelloWorld implements \Core\Gateways\HelloWorld
     {
         return "Hello World!";
     }
-
 }

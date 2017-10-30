@@ -10,7 +10,8 @@
     "autoload": {
         "psr-4": {
             "App\\":"app/", 
-            "Core\\":"core/"
+            "Module1\\":"core/Module1",
+            "Module2\\":"core/Module2"
         }
     },
     "scripts": {

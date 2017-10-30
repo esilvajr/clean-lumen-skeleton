@@ -1,8 +1,8 @@
 <?php
 
-namespace Core\Gateways\Repositories;
+namespace Module2\Gateways\Repositories;
 
-use Core\Gateways;
+use Module2\Gateways;
 
 interface RepositoryInterface
 {

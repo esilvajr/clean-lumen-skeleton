@@ -1,6 +1,6 @@
 <?php
 
-namespace Core\Interactors\UseCase\Responses;
+namespace Module1\Interactors\UseCase\Responses;
 
 interface Response
 {
