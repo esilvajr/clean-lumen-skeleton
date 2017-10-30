@@ -1,6 +1,6 @@
 <?php
 
-namespace Module2\Gateways;
+namespace ServiceManager;
 
 interface ServiceManager
 {
