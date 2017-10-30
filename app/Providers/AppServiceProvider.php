@@ -2,7 +2,8 @@
 
 namespace App\Providers;
 
-use Module1\Gateways\HelloWorld;
+use Module1\Gateways\HelloWorld as HWV1;
+use Module2\Gateways\HelloWorld as HWV2;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -14,8 +15,12 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton(HelloWorld::class, function(){
+        $this->app->singleton(HWV1::class, function(){
             return (new \Module1\Entities\HelloWorld())->sayHelloWorld();
+        });
+
+        $this->app->singleton(HWVV2::class, function(){
+            return (new \Module2\Entities\HelloWorld())->sayHelloWorld();
         });
     }
 }

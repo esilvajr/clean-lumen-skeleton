@@ -11,3 +11,9 @@ $router->group(['prefix' => 'v1/'], function() use ($router) {
     });
 });
 
+$router->group(['prefix' => 'v2/'], function() use ($router) {
+    $router->get('/', function() use ($router){
+        $gateway = new \Module2\Gateways\Gateway();
+        return $gateway->getServiceManager()->make(\Module2\Gateways\HelloWorld::class);
+    });
+});
